@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html> 
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/logo_blog.png">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../script.js"></script>
+    <title>O Bom e Velho Feijão Tropeiro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <div class="container-background">
+    <div class="container"> 
+        <button class="button-theme" onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
+        <img class="logo" src="../../images/logo_blog.png">
+        <p class ="page-title" id="h">
+            O Chefe Criativo
+        </p>
+    </div>
+    <div class="menu-container">
+    <a class="link-logo" href="../../index.html">
+    <button class="button-menu" style="margin-left:10px">Home</button>
+  </a>
+</div>
+    <hr class="container-line"> 
+</div>
+    <div class="space-background">
+    </div>
+    <br>
+    <br>
+    <div class="background">
+   <div class="button placement">
+    </div>
+    <body>
+        <div id="mh" class="moveable-header">
+            <div id="size"></div>
+            <button class="button-menu-M" style="margin-left:10px;" onclick="moveToSubtitles('h')">^</button>
+        </div>
+        <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+            O Bom e Velho Feijão Tropeiro
+        </p>
+        <p class="page-subtitles1" style="margin-top: 5px; margin-bottom: 0px;"> 
+            Comida Caseira
+        </p>
+        <p class="text"> 
+            Olá, pessoal! Hoje vou falar sobre um prato caseiro brasileiro que é uma delícia e tem um toque de história: o feijão tropeiro. Além de contar um pouco da sua origem e curiosidades, também vou passar uma receita incrível para vocês se aventurarem na cozinha.
+            <br>
+            <br>
+            A história do feijão tropeiro é bem interessante e está relacionada ao período colonial do Brasil. Os tropeiros eram comerciantes que viajavam por todo o país para vender mercadorias e suprir as necessidades das pessoas que viviam em lugares mais isolados. Eles carregavam em suas tropas tudo o que era preciso para a sobrevivência, inclusive os alimentos.
+            <br>
+            <br>
+            O feijão tropeiro era um prato que estava presente nas refeições desses tropeiros, pois era uma forma prática de preparar uma refeição completa e nutritiva, que poderia ser feita rapidamente em acampamentos improvisados.
+            <br>
+            <div class="center">
+            <img class="image" src="https://t3.ftcdn.net/jpg/02/85/93/34/360_F_285933415_8U3zL3xtYbPUrGV0crjl1KtYMpHEDTlB.jpg"> 
+        </div>
+        </p>
+        <p class="text"> 
+            Com o tempo, o feijão tropeiro se popularizou e se espalhou por todo o país, se tornando um prato típico da culinária mineira. A sua receita pode variar de acordo com a região, mas geralmente inclui feijão, toucinho, linguiça, farinha de mandioca, ovos e temperos.
+            <br>
+            <br>
+            Uma curiosidade interessante é que, durante a Semana Santa, em muitas casas do interior de Minas Gerais, o feijão tropeiro é servido com couve refogada e arroz doce. É uma tradição que vem sendo mantida há gerações e que mostra a importância do prato na cultura local.
+            <br>
+            <br>
+            Mas, chega de papo e vamos para a receita!
+            <br>
+            <br>
+            <br>
+            <b>Ingredientes: </b>
+            <br>
+            <br>
+            • 500g de feijão carioca <br>
+            • 200g de linguiça calabresa picada <br>
+            • 200g de toucinho defumado picado <br>
+            • 1 cebola picada <br>
+            • 3 dentes de alho picados <br>
+            • 1 xícara de farinha de mandioca <br>
+            • 2 ovos cozidos e picados <br>
+            • Sal e pimenta-do-reino a gosto <br>
+            • Cheiro-verde picado a gosto <br>
+            <br>
+            <br>
+            <b>Modo de preparo: </b>
+            <br>
+            <br>
+            <b>1.</b> Cozinhe o feijão até que fique macio. <br>
+            <b>2.</b> Em uma frigideira, frite a linguiça e o toucinho até que fiquem dourados. <br>
+            <b>3.</b> Em outra panela, refogue a cebola e o alho até que fiquem dourados. <br>
+            <b>4.</b> Adicione o feijão cozido na panela com a cebola e o alho refogados. Acrescente a linguiça e o toucinho fritos e misture tudo. <br>
+            <b>5.</b> Adicione a farinha de mandioca e misture bem. <br> 
+            <b>6.</b> Por último, adicione os ovos picados e o cheiro-verde. <br>
+            <b>7.</b> Acerte o sal e a pimenta-do-reino a gosto. <br>
+            <b>8.</b> Sirva acompanhado de arroz branco e couve refogada.
+            <br>
+            <br>
+            E aí, gostaram da receita? O feijão tropeiro é uma ótima opção para um almoço ou jantar em família ou para receber os amigos. Além de ser saboroso, é um prato que tem uma história e tradição muito ricas na culinária
+            <br>
+            <br>
+        </p>
+        <div class="comments"> 
+            <div class="comments-header">
+            Comentários
+         </div>
+            <div class="comments-message">
+             Escreva seu comentário <br>
+           <textarea id="messageInput" class="message-input" rows="8" cols="160" wrap="soft"></textarea> <br>
+          <a id="errorMessage" style="display:none;"> Você precisa estar logado!</a> <br>
+           <button id="commentsButton" class="comments-button" onclick="postSystem()">Publicar</button>
+         </div>
+        <br>
+        <br>
+        <br>
+           <div class="comments-commentArea"> 
+             <div id="p" class="profile" style="display: none;">
+                 <img id="pp" class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                 <a  id="pu" class="profile-username"></a> <br>
+                 <a id="cm" class="messages">
+                  </a>
+                  <br>
+                  <br>
+               </div>
+               <hr class="second-line-divider-bottom"> 
+             <div class="profile">
+             <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+             <a class="profile-username">Joaquim Lópes</a> <br>
+             <a class="messages">
+                amo um feijão tropeiro! vlw pela receita
+              </a> 
+           </div>
+           <br>
+           <hr class="second-line-divider-bottom">
+           <div class="profile">
+             <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+             <a class="profile-username">Vinícius Vidal</a> <br>
+             <a class="messages">
+               Hmmm, ficou bom demais. Vou definitivamente fazer mais!
+              </a> 
+           </div>
+           <br>
+           <hr class="second-line-divider-bottom">
+           <div class="profile">
+             <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+             <a class="profile-username">Leonardo Maldonado</a> <br>
+             <a class="messages">
+                Vou fazer essa receita depois
+              </a> 
+           </div>
+           <br>
+         </div>
+     </div>
+    </body>
+    </div>
+</html>

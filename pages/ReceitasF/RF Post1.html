@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html> 
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/logo_blog.png">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../script.js"></script>
+    <title>Receita Deliciosa!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <div class="container-background">
+    <div class="container"> 
+        <button class="button-theme" onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
+        <img class="logo" src="../../images/logo_blog.png">
+        <p class ="page-title" id="h">
+            O Chefe Criativo
+        </p>
+    </div>
+    <div class="menu-container">
+    <a class="link-logo" href="../../index.html">
+    <button class="button-menu" style="margin-left:10px">Home</button>
+  </a>
+</div>
+    <hr class="container-line"> 
+</div>
+    <div class="space-background">
+    </div>
+    <br>
+    <br>
+    <div class="background">
+   <div class="button placement">
+    </div>
+    <body>
+        <div id="mh" class="moveable-header">
+            <div id="size"></div>
+            <button class="button-menu-M" style="margin-left:10px;" onclick="moveToSubtitles('h')">^</button>
+        </div>
+        <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+            Receita Rapída de Pão de Queijo
+        </p>
+        <p class="page-subtitles1" style="margin-top: 5px; margin-bottom: 0px;"> 
+           Receitas Fáceis para Iniciantes
+        </p>
+        <p class="text"> 
+            Se você é um iniciante na cozinha e quer aprender a fazer um delicioso pão de queijo em casa, temos a receita perfeita para você! Essa receita é super fácil e rápida de fazer, e o resultado é um pão de queijo quentinho e crocante por fora, macio por dentro e cheio de sabor.
+            <br>
+            <br>
+            <br>
+            <b>Ingredientes: </b>
+            <br>
+            <br>
+            • 2 xícaras de polvilho doce <br>
+            • 1 xícara de leite <br>
+            • 1/2 xícara de óleo <br>
+            • 1 ovo <br>
+            • 1 xícara de queijo ralado (pode ser queijo minas, parmesão ou outro de sua preferência) <br>
+            • Sal a gosto <br>
+            <br>
+            <br>
+            <b>Modo de preparo: </b>
+            <br>
+            <br>
+            <b>1.</b> Pré-aqueça o forno a 200°C. <br>
+            <b>2.</b> Em uma panela, aqueça o leite e o óleo juntos até ferver. <br>
+            <b>3.</b> Em uma tigela, misture o polvilho doce com o queijo ralado e uma pitada de sal. <br>
+            <b>4.</b> Despeje a mistura de leite e óleo sobre o polvilho e mexa bem. <br>
+            <b>5.</b> Adicione o ovo à mistura e misture até formar uma massa homogênea. <br>
+            <b>6.</b> Com as mãos, faça pequenas bolinhas com a massa e coloque em uma assadeira untada com óleo. <br>
+            <b>7.</b> Leve ao forno por cerca de 20 minutos, ou até que os pães de queijo estejam dourados e crocantes por fora. <br>
+            <br>
+            E pronto! Sua receita rápida de pão de queijo está pronta. Agora é só servir com um café quentinho ou um suco natural e aproveitar essa delícia.
+            <br>
+            <br>
+            <br>
+            <div class="center">
+            <img class="image" src="https://media.istockphoto.com/id/1089705568/pt/foto/brazilian-snack-cheese-bread.jpg?s=612x612&w=0&k=20&c=-_YWHy9HdIuz90G-pIuRH8M6cTOPcWo7PnBom81h_Yc="> 
+        </div>
+        <br>
+        <br>
+        </p>
+        <p class="text"> 
+            O pão de queijo é um dos símbolos da culinária mineira, e é amado em todo o Brasil. Essa receita é uma forma prática e rápida de matar a vontade de comer um pão de queijo delicioso em casa, sem precisar ir até uma padaria ou lanchonete.
+            <br>
+            <br>
+            Uma dica para deixar seu pão de queijo ainda mais saboroso é experimentar diferentes tipos de queijo na receita, como o queijo coalho ou o queijo prato. Também é possível adicionar outros ingredientes à massa, como bacon picado, ervas finas ou azeitonas.
+            <br>
+            <br>
+            Não deixe de experimentar essa receita rápida de pão de queijo e se surpreender com o resultado! E se quiser, compartilhe com seus amigos e familiares, eles vão adorar. <br>
+            Deixe nos comentários dicas e ideias para nós!
+            <br>
+        </p>
+        <div class="comments"> 
+            <div class="comments-header">
+            Comentários
+         </div>
+            <div class="comments-message">
+             Escreva seu comentário <br>
+           <textarea id="messageInput" class="message-input" rows="8" cols="160" wrap="soft"></textarea> <br>
+          <a id="errorMessage" style="display:none;"> Você precisa estar logado!</a> <br>
+           <button id="commentsButton" class="comments-button" onclick="postSystem()">Publicar</button>
+         </div>
+        <br>
+        <br>
+        <br>
+           <div class="comments-commentArea"> 
+             <div id="p" class="profile" style="display: none;">
+                 <img id="pp" class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                 <a  id="pu" class="profile-username"></a> <br>
+                 <a id="cm" class="messages">
+                  </a>
+                  <br>
+                  <br>
+               </div>
+               <hr class="second-line-divider-bottom"> 
+             <div class="profile">
+             <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+             <a class="profile-username">Liana Coelho</a> <br>
+             <a class="messages">
+               Eu acho que deveriam fazer uma receita de frango ã bolonhesa.
+              </a> 
+           </div>
+           <br>
+           <hr class="second-line-divider-bottom">
+           <div class="profile">
+            <img class="profile-picture" src="https://media.discordapp.net/attachments/884501003351773254/1097675220308996196/Screenshot_2023-04-17-21-09-17-877-edit_com.google.android.apps.photos.jpg?width=560&height=559">
+            <a class="profile-username">Rafael Lacerda</a> <br>
+            <a class="messages">
+                Pães de queijo são minha comida favorita, é uma pena que eu seja intolerante a lactose! Sua receita é perfeita, mas não tem uma variação sem o queijo não? Tipo, pão de
+             </a> 
+          </div>
+          <br>
+           <hr class="second-line-divider-bottom">
+           <div class="profile">
+             <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+             <a class="profile-username">João Moraes</a> <br>
+             <a class="messages">
+               Pão de queijo é classico.
+              </a> 
+           </div>
+           <br>
+           <hr class="second-line-divider-bottom">
+           <div class="profile">
+             <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+             <a class="profile-username">Antenor Morais</a> <br>
+             <a class="messages">
+              otima receita de pão de queijo!
+              </a> 
+           </div>
+           <br>
+         </div>
+     </div>
+    </body>
+    </div>
+</html>

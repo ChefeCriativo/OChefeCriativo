@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html id="html"> 
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_blog.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>O Chefe Criativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <div class="container-background">
+    <div class="container"> 
+        <button class="button-theme" onclick="changeThemes()" style="cursor: pointer; float: right;"> Alterar Tema</button>
+        <img class="logo" src="images/logo_blog.png">
+        <p class ="page-title" id="h">
+            O Chefe Criativo
+        </p>
+    </div>
+    <div class="menu-container">
+        <div id="btns">
+        <button class="button-menu" style="margin-left: 0.4%" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
+        <button class="button-menu" style="margin-left: 10%" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
+        <button class="button-menu" style="margin-left: 23.3%" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
+        <button class="button-menu" style="margin-left: 36.4%" onclick="moveToSubtitles('s4')">Sobremesas Incríveis</button>
+        <button class="button-menu" style="margin-left: 49.1%" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
+        <button id="bt1" class="button-menu" style="margin-left: 59.7%" onclick="moveToSubtitles('s6')">Comida Caseira</button>
+        <button id="bt2" class="button-menu" style="margin-left: 69.3%" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
+        <button id="btS" class="button-menu" style="margin-left: 90.3%" onclick="openSignScreen()">Cadastrar</button>
+        <button id="btL" class="button-menu" style="margin-left: 96%" onclick="openLoginScreen()">Logar</button>
+        <div class="profile-slv" onclick="openModifyScreen()">
+            <a id="name-slv" class="name-profile-slv" style="display: none;"> </a>
+           <img id="image-slv" class="image-profile-slv" style="display: none;">
+        </div>
+      </div>
+    </div>
+    <hr class="container-line"> 
+    </div>
+    <div class="space-background">
+    </div>
+    <br>
+    <br>
+   <div class="button placement">
+    </div>
+    <body> 
+        <div class="background">
+        <div id="bb" class="blur-background" style="display: none;"></div>
+        <div id="mh" class="moveable-header">
+            <button class="button-menu-M" style="margin-left:10px;" onclick="moveToSubtitles('h')">Destaques</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s1')">Receitas Fáceis</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s2')">Culinária Internacional</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s3')">Receitas Vegetarianas</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s4')">Sobremesas Incríveis</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s5')">Cozinha Saudável</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s6')">Comida Caseira</button>
+            <button class="button-menu-M" onclick="moveToSubtitles('s7')">Ocasiões Especiais</button>
+          </div>
+        <p class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+            Destaques
+        </p>
+        
+        <div id="ss" class="sign-screen" style="display: none;"> 
+            <a class="sign-title">
+                Cadastrar
+            </a>
+            <a class="back" onclick="closeWindows()">X</a>
+            <br>
+            <a href="pages/Error404.html" style="font-weight: 200; margin-left:8%; cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+            <div class="center">
+                <a class="input-label" style="top:25%; position: fixed;"> 
+                    Email
+                </a>
+            <input type="text" id="emailInput2" class="email-input2" placeholder="Exemplo@email.com" size="25"> <br>
+            <a class="input-label" style="top:45%; position: fixed;"> 
+                Senha
+            </a>
+            <input type="text" id="passwordInput" class="password-input" placeholder="Senha" size="25">
+            <br>
+            <br>
+            <a class="sign-to-login" style="cursor: pointer;" onclick="openLoginScreen()">Já tem uma conta? Entre aqui</a>
+            <button class="sign-button" style="top:75%; position: fixed;" onclick="signSystem()">Cadastrar</button>
+            </div>
+           </div>
+           
+           <div id="sl" class="sign-screen" style="display: none;"> 
+            <a class="sign-title">
+                Logar
+            </a>
+            <a class="back" onclick="closeWindows()">X</a>
+            <br>
+            <a href="pages/Error404.html" style="font-weight: 200; margin-left:8%; cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+            <div class="center">
+                <a class="input-label" style="top:25%; position: fixed;"> 
+                    Email
+                </a>
+            <input type="text" id="emailInput3" class="email-input2" placeholder="Exemplo@email.com" size="25"> <br>
+            <a class="input-label" style="top:45%; position: fixed;"> 
+                Senha
+            </a>
+            <input type="text" id="passwordInput2" class="password-input" placeholder="Senha" size="25">
+            <br>
+            <br>
+            <a class="sign-to-login" style="cursor: pointer;" onclick="openSignScreen()">Não tem uma conta? Crie aqui</a>
+            <button class="sign-button" style="top:75%; position: fixed;" onclick="loginSystem()">Logar</button>
+            </div>
+           </div>
+           
+           <div id="sc" class="sign-screen" style="display: none;"> 
+            <a class="sign-title">
+                Customize seu perfil!
+            </a>
+            <a class="back" onclick="closeWindows()">X</a>
+            <br>
+            <button class="leave-button" style="top:75%; position: fixed; margin-left: 2%;" onclick="leaveAcc()">Sair</button>
+            <div class="center">
+                <a class="input-label" style="top:25%; position: fixed;"> 
+                    Nome
+                </a>
+            <input type="text" id="usernameInput" class="email-input2" placeholder="Coloque um nome" size="25"> <br>
+            <a class="input-label" style="top:45%; position: fixed;"> 
+                Imagem de Perfil
+            </a>
+            <input type="text" id="imageInput" class="password-input" placeholder="Coloque um link de uma imagem" size="25">
+            <br>
+            <br>
+            <button class="sign-button" style="top:75%; position: fixed;" onclick="modifySystem()">Mudar</button>
+            </div>
+           </div>
+
+          <div id="cs" class="cookie-screen" style="display: none;"> 
+            <a style="font-weight: 300; margin-top: 20px; margin-left: 3px; font-size:25px; font-family: Arial, Helvetica, sans-serif; color: black; margin-bottom: 300%;">Nós usamos Cookies!</a> <img class="cookie-img" src="https://pngimg.com/d/cookie_PNG13656.png">
+            <div class="cookie-screen-2color"></div>
+            <br>
+            <br>
+             Para melhorar sua experiência, <br> usamos Cookies para personalizar <br>
+             nosso site e selecionar conteúdos <br>
+             que você pode estar interessado! <br>
+             <a href="pages/Error404.html" style="cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+             <button class="button-cookie-screen" onclick="unlockCookieScreen()">Eu aceito os cookies</button>
+             <button class="button-cookie-screen-D" onclick="unlockCookieScreen()">Eu não preciso dos seus cookies</button>
+           </div>
+           
+           <div id="es" class="email-screen" style="display: none;"> 
+            <a style="font-weight: 300; margin-top: 20px; margin-left: 3px; font-size:25px; font-family: Arial, Helvetica, sans-serif; color: black; margin-bottom: 300%;">Hey!</a> <img class="email-img" src="https://cdn-icons-png.flaticon.com/512/4470/4470631.png">
+            <div class="email-screen-2color"></div>
+            <br>
+            <br>
+             Você gostaria de saber quando <br>
+             possuimos novas postagens? <br>
+             Diga seu email e nós te avisamos! <br>
+             <a href="pages/Error404.html" style="cursor: pointer; text-decoration-line: underline; text-decoration-color: rgb(39, 39, 39); color: black;">Política de Privacidade</a> <br>
+             <input type="text" id="emailInput" class="email-input" placeholder="Exemplo@email.com" size="25">
+             <button class="button-email-screen" onclick="unlockEmailScreen()">Aceitar</button>
+             <button class="button-email-screen-D" onclick="unlockEmailScreen()">Não, obrigado</button>
+           </div>
+        <a id="h1" class="link" href="pages/CulinariaI/CI Post1.html"> <div class="highlights">
+        <img id="h1img" class="image-highlights" style="margin-left: 4.5%; margin-bottom: 0%;" src="https://t4.ftcdn.net/jpg/03/68/36/95/360_F_368369518_N9KPItZpGEddUwhGtutOn5LEKXYCdF4q.jpg">
+        <p class="text-highlights">
+            A história do Petit Gateau
+        </p>
+    </div>
+    </a>
+    <a id="h2" class="link" href="pages/CozinhaS/CS Post2.html"><div class="highlights" style="position: absolute; top: 0.5%; left: 35%">
+        <img id="h2img" class="image-highlights" style="margin-left: 7.5%; margin-top: 0px;" src="https://www.glutenpedia.com.br/wp-content/uploads/2020/04/gr%C3%A3o-de-bico.jpg">
+        <p class="text-highlights" style="margin-left: 7.5%;">
+           Um ingrediente saudável e delicioso
+        </p>
+    </div>
+    </a>
+    <a id="hm1" class="link" href="pages/CozinhaS/CS Post2.html"><div class="highlights" style="float: left; top: 1%; left: 38%">
+        <img id="hm1img" class="image-highlights" style="margin-left: 7.5%; margin-top: 0%;" src="https://www.glutenpedia.com.br/wp-content/uploads/2020/04/gr%C3%A3o-de-bico.jpg">
+        <p class="text-highlights" style="margin-left: 7.5%;">
+           Um ingrediente saudável e delicioso
+        </p>
+    </div>
+    </a>
+    <a id="hm2" class="link" href="pages/ComidaC/CC Post2.html"><div class="highlights" style="top: 1%; left: 38%">
+        <img class="image-highlights" style="margin-left: 7.5%; margin-top: 0px; max-width: 83%; margin-bottom: 0%;" src="https://t3.ftcdn.net/jpg/03/49/29/46/360_F_349294683_cUjRIcSDe4iTaVAiEb7xY6SjNPmUEwch.jpg">
+        <p class="text-highlights" style="margin-left: 7.5%;">
+            O bom e velho Feijão Tropeiro
+        </p>
+    </div>
+    </a>
+    <a id="h3" class="link" href="pages/ComidaC/CC Post2.html"><div class="highlights" style="top: 8.1%">
+        <img id="h3img" class="image-highlights" style="margin-left: 4.5%; margin-top: 0%;" src="https://t3.ftcdn.net/jpg/03/49/29/46/360_F_349294683_cUjRIcSDe4iTaVAiEb7xY6SjNPmUEwch.jpg">
+        <p class="text-highlights" style="margin-left: 4.5%;">
+            O bom e velho Feijão Tropeiro
+        </p>
+    </div>
+    </a>
+    <div class="space-background">
+    </div>
+
+    <p id="s1" class="page-subtitles" style="margin-bottom: 0px;"> 
+        Receitas Fáceis para iniciantes
+    </p>
+    <a class="link" href="pages/ReceitasF/RF Post1.html"><div class="first-posts"> 
+        <img class="image-posts" src="https://media.istockphoto.com/id/1089705568/pt/foto/brazilian-snack-cheese-bread.jpg?b=1&s=612x612&w=0&k=20&c=i7929VAj8POFw3voA44BIFsG2OLDZfNVoOSt_Kqgw9w=">
+        <p class="first-text-posts">
+            Receita Rápida de Pão de Queijo 
+        </p>
+    </div>
+    </a>
+    <a class="link" href="pages/ReceitasF/RF Post2.html"><div class="posts">
+        <img class="image-posts" src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/6cf1bb7359f2dca08445c83ff58bf3bf.jpg">
+        <p class="text-posts">
+            Receita de Bolo de Brigadeiro para <br>
+            qualquer um fazer!
+        </p>
+    </div>
+   </a>
+
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <img src="images/Line_Design_Dark.png" class="line-divider-dark">
+    <hr class="second-line-divider-bottom">
+    <p  id="s2" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+        Culinária Internacional
+    </p>
+    <a class="link" href="pages/CulinariaI/CI Post1.html"><div class="first-posts">
+        <img class="image-posts" src="https://t4.ftcdn.net/jpg/03/68/36/95/360_F_368369518_N9KPItZpGEddUwhGtutOn5LEKXYCdF4q.jpg">
+        <p class="first-text-posts">
+            A história do Petit Gateau
+        </p>
+    </div>
+    </a>
+    <a class="link" href="pages/CulinariaI/CI Post2.html"><div class="posts">
+        <img class="image-posts" src="https://images7.alphacoders.com/596/596343.jpg">
+        <p class="text-posts">
+            Como surgiu a pizza?
+        </p>
+    </div>
+ </a>
+
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <img src="images/Line_Design_Dark.png" class="line-divider-dark">
+    <hr class="second-line-divider-bottom">
+    <p  id="s3" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+        Receitas Vegetarianas e Veganas
+    </p>
+    <a class="link" href="pages/ReceitasV/RV Post1.html"><div class="first-posts">
+        <img class="image-posts" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-vegetariana-00.jpeg">
+        <p class="first-text-posts">
+            Uma receita de pizza vegetariana <br>
+            Incrível!
+        </p>
+    </div>
+    </a>
+    <a class="link" href="pages/ReceitasV/RV Post2.html"><div class="posts">
+        <img class="image-posts" src="https://veganandcolors.com/wp-content/uploads/2019/08/c8-1024x576.jpg">
+        <p class="text-posts">
+            Brownie Vegano: Tão bom quanto o <br> 
+            tradicional!
+        </p>
+    </div>
+    </a>
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <img src="images/Line_Design_Dark.png" class="line-divider-dark">
+    <hr class="second-line-divider-bottom">
+    <p  id="s4" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+        Sobremesas Incríveis
+    </p>
+    <a class="link" href="pages/SobremesasI/SI Post1.html"><div class="first-posts">
+        <img class="image-posts" src="https://i.ytimg.com/vi/jX9pd54hHQs/maxresdefault.jpg">
+        <p class="first-text-posts">
+            Receita super fácil e gostosa: <br>
+            Pavê de morango e leite ninho 
+        </p>
+    </div>
+    </a>
+    <a class="link" href="pages/SobremesasI/SI Post2.html"><div class="posts">
+        <img class="image-posts" src="https://img.itdg.com.br/tdg/images/recipes/000/305/525/335694/335694_original.jpg?mode=crop&width=710&height=400">
+        <p class="text-posts">
+            Tudo sobre o famoso 
+            Crème Brûlée
+        </p>
+    </div>
+    </a>
+    
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <img src="images/Line_Design_Dark.png" class="line-divider-dark">
+    <hr class="second-line-divider-bottom">
+    <p  id="s5" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+        Cozinha saudável
+    </p>
+    <a class="link" href="pages/CozinhaS/CS Post1.html"><div class="first-posts">
+        <img class="image-posts" src="https://img.freepik.com/fotos-gratis/saladas-com-quinoa-rucula-rabanete-tomate-e-pepino-em-uma-tigela-na-mesa-de-madeira-conceito-de-comida-dieta-desintoxicacao-e-vegetariano-saudavel_2829-6842.jpg">
+        <p class="first-text-posts">
+            Receita da incrível Salada de Quinoa
+        </p>
+    </div>
+    </a>
+    <a class="link" href="pages/CozinhaS/CS Post2.html"><div class="posts">
+        <img class="image-posts" src="https://conteudo.imguol.com.br/c/entretenimento/94/2016/12/07/grao-de-bico-1481138396075_v2_4x3.jpg">
+        <p class="text-posts">
+            Um ingrediente saudável e delicioso! <br>
+        </p>
+    </div>
+    </a>
+
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <img src="images/Line_Design_Dark.png" class="line-divider-dark">
+    <hr class="second-line-divider-bottom">
+    <p  id="s6" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+        Comida Caseira
+    </p>
+    <a class="link" href="pages/ComidaC/CC Post1.html"><div class="first-posts">
+        <img class="image-posts" src="https://t4.ftcdn.net/jpg/01/07/71/09/360_F_107710915_cFtzNMdOaZHIDY2G8BeXHMvfJ43efIF8.jpg">
+        <p class="first-text-posts">
+            A clássica Feijoada
+        </p>
+    </div> 
+    </a>
+    <a class="link" href="pages/ComidaC/CC Post2.html"><div class="posts">
+        <img class="image-posts" src="https://t3.ftcdn.net/jpg/03/49/29/46/360_F_349294683_cUjRIcSDe4iTaVAiEb7xY6SjNPmUEwch.jpg">
+        <p class="text-posts">
+            O bom e velho Feijão Tropeiro
+        </p>
+    </div>
+    </a>
+    <hr class="second-line-divider-top">
+    <img src="images/Line_Design.png" class="line-divider">
+    <img src="images/Line_Design_Dark.png" class="line-divider-dark">
+    <hr class="second-line-divider-bottom">
+    <p  id="s7" class="page-subtitles" style="margin-top: 5px; margin-bottom: 0px;"> 
+        Receitas para Ocasiões Especiais
+    </p>
+    <a class="link" href="pages/ReceitasOE/ROE Post1.html"><div class="first-posts">
+        <img class="image-posts" src="https://revistasaboresdosul.com.br/wp-content/uploads/2017/06/risoto-de-cogumelos.jpg">
+        <p class="first-text-posts">
+            A receita que serve pra tudo!
+        </p>
+    </div>
+    </a>
+    <a class="link" href="pages/ReceitasOE/ROE Post2.html"><div class="posts">
+        <img class="image-posts" src="https://s2.glbimg.com/qGbQguetpxVZSoRS_3hRZ9QTPsY=/smart/e.glbimg.com/og/ed/f/original/2017/08/31/risoto_de_camarao_com_mucarela_de_bufala_e_tomate_seco_familia_paludo_foto_rodrigo_azevedo_2.jpg">
+        <p class="text-posts">
+           Uma receita de amor
+        </p>
+    </div>
+    </a>
+    <div class="credits">
+    <p class="credits-text">
+        <img src="images/logo_blog.png" style="max-width: 8%;"> <br>
+        <b>Créditos</b>
+        <br>
+        <br>
+        <a style="cursor: pointer; text-decoration-line: underline;" onclick="location.href= 'https://github.com/ItsUnder'">Site <b>criado</b> por Matheus Mariano Euzébio</a> <br>
+        <br>
+        <a style="cursor:pointer; text-decoration-line: underline;" onclick="location.href= 'https://instagram.com/__jesuscaio__?igshid=ZDdkNTZiNTM='"><b>Design</b> por Caio Marcos <br></a>
+        <br> 
+        <b>Escritores:</b> <br>
+            Eduardo <br>
+            Gregory <br>
+            Julia Rafaela <br>
+            Filipe <br>
+            Beatriz <br>
+            Maria Eduarda <br>
+            Pedro <br>
+            Matheus M <br>
+            Maria Luiza Castro <br>
+            Taina <br>
+            Julia Gabriele <br>
+            Ane Cardine <br>
+            Evely <br>
+            Geovanny <br>
+            Tathyane <br>
+    </p>
+    </div>
+</div>
+</body>
+</html>
